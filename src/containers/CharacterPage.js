@@ -10,7 +10,7 @@ import {
 import "./CharacterPage.css";
 import CharacterCard from "../components/CharacterCard";
 
-function CharacterPage({ handleEditCharacter, match, history }) {
+function CharacterPage({ match, history }) {
   const characterId = match.params.characterId;
 
   const [

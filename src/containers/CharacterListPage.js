@@ -3,14 +3,7 @@ import NavManager from "../components/NavManager";
 import "./CharacterListPage.css";
 import CharacterCard from "../components/CharacterCard";
 import Modal from "../components/Modal";
-import CharacterPage from "./CharacterPage";
-import {
-  getCharacters,
-  getCharacter,
-  createCharacter,
-  updateCharacter,
-  deleteCharacter,
-} from "../CharacterService";
+import { getCharacters, createCharacter } from "../CharacterService";
 import AddEditCharacterForm from "../components/AddEditCharacterForm";
 
 function CharacterListPage() {
