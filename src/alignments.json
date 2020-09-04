@@ -1,0 +1,38 @@
+[
+  {
+    "value": "lawful good",
+    "label": "Lawful Good"
+  },
+  {
+    "value": "neutral good",
+    "label": "Neutral Good"
+  },
+  {
+    "value": "chaotic good",
+    "label": "Chaotic Good"
+  },
+  {
+    "value": "lawful neutral",
+    "label": "Lawful Neutral"
+  },
+  {
+    "value": "true neutral",
+    "label": "True Neutral"
+  },
+  {
+    "value": "chaotic neutral",
+    "label": "Chaotic Neutral"
+  },
+  {
+    "value": "lawful evil",
+    "label": "Lawful Evil"
+  },
+  {
+    "value": "neutral evil",
+    "label": "Neutral Evil"
+  },
+  {
+    "value": "chaotic evil",
+    "label": "Chaotic Evil"
+  }
+]

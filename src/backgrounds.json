@@ -1,0 +1,66 @@
+[
+  {
+    "value": "acolyte",
+    "label": "Acolyte"
+  },
+  {
+    "value": "charlatan",
+    "label": "Charlatan"
+  },
+  {
+    "value": "criminal",
+    "label": "Criminal"
+  },
+  {
+    "value": "entertainer",
+    "label": "Entertainer"
+  },
+  {
+    "value": "folk hero",
+    "label": "Folk Hero"
+  },
+  {
+    "value": "guild artisan",
+    "label": "Guild Artisan"
+  },
+  {
+    "value": "guild merchant",
+    "label": "Guild Merchant"
+  },
+  {
+    "value": "hermit",
+    "label": "Hermit"
+  },
+  {
+    "value": "noble",
+    "label": "Noble"
+  },
+  {
+    "value": "noble knight",
+    "label": "Noble Knight"
+  },
+  {
+    "value": "outlander",
+    "label": "Outlander"
+  },
+  {
+    "value": "sage",
+    "label": "Sage"
+  },
+  {
+    "value": "sailor",
+    "label": "Sailor"
+  },
+  {
+    "value": "pirate",
+    "label": "Pirate"
+  },
+  {
+    "value": "soldier",
+    "label": "Soldier"
+  },
+  {
+    "value": "urchin",
+    "label": "Urchin"
+  }
+]

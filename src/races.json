@@ -1,0 +1,38 @@
+[
+  {
+    "value": "dwarf",
+    "label": "Dwarf"
+  },
+  {
+    "value": "elf",
+    "label": "Elf"
+  },
+  {
+    "value": "halfling",
+    "label": "Halfling"
+  },
+  {
+    "value": "human",
+    "label": "Human"
+  },
+  {
+    "value": "dragonborn",
+    "label": "Dragonborn"
+  },
+  {
+    "value": "gnome",
+    "label": "Gnome"
+  },
+  {
+    "value": "half-elf",
+    "label": "Half-Elf"
+  },
+  {
+    "value": "half-orc",
+    "label": "Half-Orc"
+  },
+  {
+    "value": "tiefling",
+    "label": "Tiefling"
+  }
+]

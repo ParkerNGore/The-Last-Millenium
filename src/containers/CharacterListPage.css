@@ -1,0 +1,10 @@
+header {
+  background-color: #c4c4c4;
+  display: flex;
+}
+.character-card-list {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}

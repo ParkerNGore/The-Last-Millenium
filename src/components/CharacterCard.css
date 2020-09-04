@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+.character-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.character-image {
+  height: 200px;
+  width: 200px;
+  border: solid 1px black;
+  background-color: white;
+}
+
+.character-list {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.character-name {
+  color: black;
+  font-size: 18px;
+  font-family: Salsa;
+  border: solid 1px black;
+  border-top-width: 0px;
+  width: 200px;
+  background-color: #3d98bf;
+  text-align: center;
+}

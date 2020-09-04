@@ -1,0 +1,18 @@
+.world-map-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.world-map {
+  border-radius: 200px;
+}
+footer {
+  display: flex;
+  bottom: 0;
+  background-color: #c4c4c4;
+}
+header {
+  background-color: #c4c4c4;
+  display: flex;
+}
