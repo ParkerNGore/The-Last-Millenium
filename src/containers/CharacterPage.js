@@ -88,6 +88,14 @@ function CharacterPage({ match, history }) {
         />
       </header>
       <NavManager />
+      <div className="edit-character-button-container">
+        <button
+          className="edit-character-button"
+          onClick={() => handleEditCharacter(character)}
+        >
+          Edit Character
+        </button>
+      </div>
       {character ? (
         <div className="character-page-container">
           <CharacterCard character={character} />
@@ -104,9 +112,6 @@ function CharacterPage({ match, history }) {
               <div>Alignment: {character.alignment}</div>
             </div>
           </div>
-          <button onClick={() => handleEditCharacter(character)}>
-            Edit Character
-          </button>
         </div>
       ) : null}
     </div>

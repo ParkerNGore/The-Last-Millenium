@@ -7,7 +7,7 @@
 
 .character-page-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 8%;
@@ -18,6 +18,24 @@
   padding-right: 10px;
   font-family: salsa;
   font-size: 18px;
+}
+
+.edit-character-button-container {
+  display: flex;
+}
+
+.edit-character-button {
+  width: 10rem;
+  margin-top: 0;
+  height: 1.5rem;
+  background-color: #3d98bf;
+  color: #c4c4c4;
+}
+
+.edit-character-button:hover {
+  background-color: #c4c4c4;
+  color: #3d98bf;
+  cursor: url(https://cur.cursors-4u.net/sports/spo-1/spo15.cur), auto;
 }
 
 .columnOne {

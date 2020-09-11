@@ -5,8 +5,8 @@ header {
 .character-card-list {
   margin-top: 8%;
   margin-bottom: 8%;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
 }
 
 .character-list {
@@ -18,14 +18,24 @@ header {
 .new-character-button {
   width: 10rem;
   margin-top: 0;
+  background-color: #3d98bf;
+  color: #c4c4c4;
 }
 
 .character-search {
   width: 10rem;
   height: 1rem;
+  opacity: 50%;
+  background-color: #c4c4c4;
 }
 
 .new-character-button-container {
   display: flex;
   justify-content: space-between;
+}
+
+.new-character-button:hover {
+  background-color: #c4c4c4;
+  color: #3d98bf;
+  cursor: url(https://cur.cursors-4u.net/sports/spo-1/spo15.cur), auto;
 }
