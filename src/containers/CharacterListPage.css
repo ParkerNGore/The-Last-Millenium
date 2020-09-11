@@ -3,8 +3,29 @@ header {
   display: flex;
 }
 .character-card-list {
-  padding-left: 10%;
-  padding-right: 10%;
   margin-top: 8%;
   margin-bottom: 8%;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.character-list {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-character-button {
+  width: 10rem;
+  margin-top: 0;
+}
+
+.character-search {
+  width: 10rem;
+  height: 1rem;
+}
+
+.new-character-button-container {
+  display: flex;
+  justify-content: space-between;
 }

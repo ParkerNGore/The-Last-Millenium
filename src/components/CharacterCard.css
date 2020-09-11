@@ -18,13 +18,6 @@
   background-color: white;
 }
 
-.character-list {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 .character-name {
   color: black;
   font-size: 18px;

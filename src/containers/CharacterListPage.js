@@ -5,6 +5,7 @@ import CharacterCard from "../components/CharacterCard";
 import Modal from "../components/Modal";
 import { getCharacters, createCharacter } from "../CharacterService";
 import AddEditCharacterForm from "../components/AddEditCharacterForm";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 function CharacterListPage() {
   const [
@@ -12,6 +13,7 @@ function CharacterListPage() {
     setIsShowingAddEditCharacterModal,
   ] = React.useState(false);
   const [currentCharacter, setCurrentCharacter] = React.useState(null);
+  const [isLoading, setIsLoading] = React.useState(false);
   const [displayCharacterList, setDisplayCharacterList] = React.useState([]);
   const [originalCharacterList, setOriginalCharacterList] = React.useState(
     () => {
@@ -20,13 +22,42 @@ function CharacterListPage() {
     }
   );
 
+  const [searchQuery, setSearchQuery] = React.useState("");
+  React.useEffect(() => {
+    if (!searchQuery) {
+      setDisplayCharacterList(originalCharacterList);
+      return;
+    }
+
+    const filteredCharacterList = originalCharacterList.filter((character) => {
+      const searchQueryLowerCase = searchQuery.toLowerCase();
+      const characterNameLowerCase = character.name.toLowerCase();
+
+      if (
+        characterNameLowerCase.startsWith(
+          searchQueryLowerCase ||
+            characterNameLowerCase.includes(searchQueryLowerCase)
+        )
+      ) {
+        return true;
+      }
+    });
+
+    setDisplayCharacterList(filteredCharacterList);
+  }, [searchQuery]);
+
   function fetchCharacters() {
+    setIsLoading(true);
+
     getCharacters()
       .then((response) => {
         setOriginalCharacterList(response.data);
         setDisplayCharacterList(response.data);
       })
-      .catch((error) => {});
+      .catch((error) => {})
+      .finally(() => {
+        setIsLoading(false);
+      });
   }
 
   function handleCreateCharacterClick() {
@@ -60,7 +91,27 @@ function CharacterListPage() {
         />
       </header>
       <NavManager />
-      <button onClick={handleCreateCharacterClick}>New Character</button>
+      <div className="new-character-button-container">
+        <button
+          className="new-character-button"
+          onClick={handleCreateCharacterClick}
+        >
+          New Character
+        </button>
+        <input
+          type="text"
+          className="character-search"
+          value={searchQuery}
+          onChange={(e) => {
+            setSearchQuery(e.target.value);
+          }}
+        />
+      </div>
+
+      {isLoading ? <LoadingSpinner type="roller" /> : null}
+      {!isLoading && displayCharacterList.length === 0 ? (
+        <h3>No Characters Found</h3>
+      ) : null}
       {isShowingAddEditCharacterModal ? (
         <Modal>
           <AddEditCharacterForm
@@ -73,8 +124,8 @@ function CharacterListPage() {
         {displayCharacterList && displayCharacterList.length
           ? displayCharacterList.map((character) => {
               return (
-                <div className="character-card-list">
-                  <CharacterCard character={character} key={character._id} />
+                <div className="character-card-list" key={character._id}>
+                  <CharacterCard character={character} />
                 </div>
               );
             })
