@@ -23,19 +23,75 @@ h1 {
 }
 .character-form-top {
   display: flex;
+  margin-bottom: 2rem;
   justify-content: space-between;
-  margin-bottom: 50px;
+  height: 250px;
 }
-.form-column-right {
+/* .character-form-top > div {
+  flex: 1;
+} */
+
+.character-form-top > .character-container {
+  height: 100%;
+  width: 25%;
+
+  align-items: center;
+  justify-content: center;
+}
+.form-column-center {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 224px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
+.form-column-center-left,
+.form-column-center-right {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+
+.character-form-right {
+  display: flex;
+  height: 100%;
+  width: 25%;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.ability-score-input {
+  height: 40px;
+  width: 40px;
+}
+
+.column-left-physical {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.column-right-mental {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.column-right-mental > div,
+.column-left-physical > div {
+  text-align: center;
+}
+
+label,
 input,
 select {
-  width: 150px;
+  display: flex;
+  width: 10rem;
 }
 .description-container {
   width: 100%;
@@ -56,4 +112,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.race-description,
+.class-description,
+.background-description {
+  white-space: pre-line;
+  text-align: left;
 }

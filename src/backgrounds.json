@@ -1,66 +1,82 @@
 [
   {
     "value": "acolyte",
-    "label": "Acolyte"
+    "label": "Acolyte",
+    "description": "Acolyte test description"
   },
   {
     "value": "charlatan",
-    "label": "Charlatan"
+    "label": "Charlatan",
+    "description": "Charlatan test description"
   },
   {
     "value": "criminal",
-    "label": "Criminal"
+    "label": "Criminal",
+    "description": "Criminal test description"
   },
   {
     "value": "entertainer",
-    "label": "Entertainer"
+    "label": "Entertainer",
+    "description": "Entertainer test description"
   },
   {
     "value": "folk hero",
-    "label": "Folk Hero"
+    "label": "Folk Hero",
+    "description": "Folk Hero test description"
   },
   {
     "value": "guild artisan",
-    "label": "Guild Artisan"
+    "label": "Guild Artisan",
+    "description": "Guild Artisan test description"
   },
   {
     "value": "guild merchant",
-    "label": "Guild Merchant"
+    "label": "Guild Merchant",
+    "description": "Guild Merchant test description"
   },
   {
     "value": "hermit",
-    "label": "Hermit"
+    "label": "Hermit",
+    "description": "Hermit test description"
   },
   {
     "value": "noble",
-    "label": "Noble"
+    "label": "Noble",
+    "description": "Noble test description"
   },
   {
     "value": "noble knight",
-    "label": "Noble Knight"
+    "label": "Noble Knight",
+    "description": "Noble Knight test description"
   },
   {
     "value": "outlander",
-    "label": "Outlander"
+    "label": "Outlander",
+    "description": "Outlander test description"
   },
   {
     "value": "sage",
-    "label": "Sage"
+    "label": "Sage",
+    "description": "Sage test description"
   },
   {
     "value": "sailor",
-    "label": "Sailor"
+    "label": "Sailor",
+    "description": "Sailor test description"
   },
   {
     "value": "pirate",
-    "label": "Pirate"
+    "label": "Pirate",
+    "description": "Pirate test description"
   },
   {
     "value": "soldier",
-    "label": "Soldier"
+    "label": "Soldier",
+    "description": "Soldier test description"
   },
   {
     "value": "urchin",
-    "label": "Urchin"
+    "label": "Urchin",
+    "description": "Urchin test description"
   }
 ]

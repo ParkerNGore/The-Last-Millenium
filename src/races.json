@@ -1,38 +1,147 @@
 [
   {
     "value": "dwarf",
-    "label": "Dwarf"
+    "label": "Dwarf",
+    "subraces": {
+      "hillDwarf": {
+        "value": "hill dwarf",
+        "label": "Hill Dwarf",
+        "description": "Hill Dwarf\nAttributes"
+      },
+      "mountainDwarf": {
+        "value": "mountain dwarf",
+        "label": "Mountain Dwarf",
+        "description": "Mountain Dwarf\nAttributes"
+      }
+    }
   },
   {
     "value": "elf",
-    "label": "Elf"
+    "label": "Elf",
+    "subraces": {
+      "highElf": {
+        "value": "high elf",
+        "label": "High Elf",
+        "description": "High Elf\nAttributes"
+      },
+      "woodElf": {
+        "value": "wood elf",
+        "label": "Wood Elf",
+        "description": "Wood Elf\nAttributes"
+      },
+      "Drow": {
+        "value": "drow",
+        "label": "Drow",
+        "description": "Drow\nAttributes"
+      }
+    }
   },
   {
     "value": "halfling",
-    "label": "Halfling"
+    "label": "Halfling",
+    "subraces": {
+      "stout": {
+        "value": "stout",
+        "label": "Stout",
+        "description": "Stout Halfling\nAttributes"
+      },
+      "lightFoot": {
+        "value": "lightfoot",
+        "label": "LightFoot",
+        "description": "LightFoot Halfling\nAttributes"
+      }
+    }
   },
   {
     "value": "human",
-    "label": "Human"
+    "label": "Human",
+    "subraces": {
+      "human": {
+        "value": "human",
+        "label": "Human",
+        "description": "Human\nAttributes"
+      },
+      "variant": {
+        "value": "variant",
+        "label": "Variant",
+        "description": "Human Variant\nAttributes"
+      }
+    }
   },
   {
     "value": "dragonborn",
-    "label": "Dragonborn"
+    "label": "Dragonborn",
+    "subraces": {
+      "black": {
+        "value": "black",
+        "label": "Black",
+        "description": "Black Dragonborn\nAttributes"
+      },
+      "blue": {
+        "value": "blue",
+        "label": "Blue",
+        "description": "Blue Dragonborn\nAttributes"
+      },
+      "brass": {
+        "value": "brass",
+        "label": "Brass",
+        "description": "Brass Dragonborn\nAttributes"
+      },
+      "bronze": {
+        "value": "bronze",
+        "label": "Bronze",
+        "description": "Bronze Dragonborn\nAttributes"
+      },
+      "copper": {
+        "value": "copper",
+        "label": "Copper",
+        "description": "Copper Dragonborn\nAttributes"
+      },
+      "gold": {
+        "value": "gold",
+        "label": "Gold",
+        "description": "Gold Dragonborn\nAttributes"
+      },
+      "green": {
+        "value": "green",
+        "label": "Green",
+        "description": "Green Dragonborn\nAttributes"
+      },
+      "red": {
+        "value": "red",
+        "label": "Red",
+        "description": "Red Dragonborn\nAttributes"
+      },
+      "silver": {
+        "value": "silver",
+        "label": "Silver",
+        "description": "Silver Dragonborn\nAttributes"
+      },
+      "white": {
+        "value": "white",
+        "label": "White",
+        "description": "White Dragonborn\nAttributes"
+      }
+    }
   },
   {
     "value": "gnome",
-    "label": "Gnome"
+    "label": "Gnome",
+    "description": "Gnome\nAttributes"
   },
   {
     "value": "half-elf",
-    "label": "Half-Elf"
+    "label": "Half-Elf",
+    "description": "Half-Elf\nAttributes"
   },
   {
     "value": "half-orc",
-    "label": "Half-Orc"
+    "label": "Half-Orc",
+    "description": "Half-Orc\nAttributes"
   },
   {
     "value": "tiefling",
-    "label": "Tiefling"
+    "label": "Tiefling",
+    "description": "Tiefling\nAttributes"
   }
 ]

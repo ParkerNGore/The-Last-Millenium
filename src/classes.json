@@ -1,50 +1,194 @@
 [
   {
     "value": "barbarian",
-    "label": "Barbarian"
+    "label": "Barbarian",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "bard",
-    "label": "Bard"
+    "label": "Bard",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "cleric",
-    "label": "Cleric"
+    "label": "Cleric",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "druid",
-    "label": "Druid"
+    "label": "Druid",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "fighter",
-    "label": "Fighter"
+    "label": "Fighter",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "monk",
-    "label": "Monk"
+    "label": "Monk",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "paladin",
-    "label": "Paladin"
+    "label": "Paladin",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "ranger",
-    "label": "Ranger"
+    "label": "Ranger",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "rogue",
-    "label": "Rogue"
+    "label": "Rogue",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "sorcerer",
-    "label": "Sorcerer"
+    "label": "Sorcerer",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "warlock",
-    "label": "Warlock"
+    "label": "Warlock",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   },
   {
     "value": "wizard",
-    "label": "Wizard"
+    "label": "Wizard",
+    "subclasses": {
+      "pathOfTheBerserker": {
+        "value": "path of the berserker",
+        "label": "Path of The Berserker",
+        "description": "Path of The Berserker Description Test"
+      },
+      "pathOfTheTotemWarrior": {
+        "value": "path of the totem warrior",
+        "label": "Path of The Totem Warrior",
+        "description": "Path of The Totem Warrior Description Test"
+      }
+    }
   }
 ]
