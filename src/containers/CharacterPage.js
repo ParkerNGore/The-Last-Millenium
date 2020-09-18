@@ -102,13 +102,18 @@ function CharacterPage({ match, history }) {
           <div className="basic-info-container">
             <div className="columnOne">
               <div>Level: {character.level}</div>
-              <div>Race: {character.race}</div>
+              <div>
+                Race: {character.subrace === "Human" ? null : character.subrace}{" "}
+                {character.race}
+              </div>
               <div>Background: {character.background}</div>
             </div>
 
             <div className="columnTwo">
               <div>Experience:</div>
-              <div>Class: {character.class}</div>
+              <div>
+                Class: {character.subclass} {character.class}
+              </div>
               <div>Alignment: {character.alignment}</div>
             </div>
           </div>

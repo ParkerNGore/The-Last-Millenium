@@ -6,12 +6,16 @@
       "hillDwarf": {
         "value": "hill dwarf",
         "label": "Hill Dwarf",
-        "description": "Hill Dwarf\nAttributes"
+        "description": "Hill Dwarf\nAttributes",
+        "conBonus": 2,
+        "wisBonus": 1
       },
       "mountainDwarf": {
         "value": "mountain dwarf",
         "label": "Mountain Dwarf",
-        "description": "Mountain Dwarf\nAttributes"
+        "description": "Mountain Dwarf\nAttributes",
+        "conBonus": 2,
+        "strBonus": 2
       }
     }
   },
@@ -22,17 +26,23 @@
       "highElf": {
         "value": "high elf",
         "label": "High Elf",
-        "description": "High Elf\nAttributes"
+        "description": "High Elf\nAttributes",
+        "dexBonus": 2,
+        "intBonus": 1
       },
       "woodElf": {
         "value": "wood elf",
         "label": "Wood Elf",
-        "description": "Wood Elf\nAttributes"
+        "description": "Wood Elf\nAttributes",
+        "dexBonus": 2,
+        "wisBonus": 1
       },
       "Drow": {
         "value": "drow",
         "label": "Drow",
-        "description": "Drow\nAttributes"
+        "description": "Drow\nAttributes",
+        "dexBonus": 2,
+        "chaBonus": 1
       }
     }
   },
@@ -43,12 +53,16 @@
       "stout": {
         "value": "stout",
         "label": "Stout",
-        "description": "Stout Halfling\nAttributes"
+        "description": "Stout Halfling\nAttributes",
+        "dexBonus": 2,
+        "conBonus": 1
       },
       "lightFoot": {
         "value": "lightfoot",
         "label": "LightFoot",
-        "description": "LightFoot Halfling\nAttributes"
+        "description": "LightFoot Halfling\nAttributes",
+        "dexBonus": 2,
+        "chaBonus": 1
       }
     }
   },
@@ -59,7 +73,13 @@
       "human": {
         "value": "human",
         "label": "Human",
-        "description": "Human\nAttributes"
+        "description": "Human\nAttributes",
+        "strBonus": 1,
+        "dexBonus": 1,
+        "conBonus": 1,
+        "intBonus": 1,
+        "wisBonus": 1,
+        "chaBonus": 1
       },
       "variant": {
         "value": "variant",
@@ -75,73 +95,112 @@
       "black": {
         "value": "black",
         "label": "Black",
-        "description": "Black Dragonborn\nAttributes"
+        "description": "Black Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       },
       "blue": {
         "value": "blue",
         "label": "Blue",
-        "description": "Blue Dragonborn\nAttributes"
+        "description": "Blue Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       },
       "brass": {
         "value": "brass",
         "label": "Brass",
-        "description": "Brass Dragonborn\nAttributes"
+        "description": "Brass Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       },
       "bronze": {
         "value": "bronze",
         "label": "Bronze",
-        "description": "Bronze Dragonborn\nAttributes"
+        "description": "Bronze Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       },
       "copper": {
         "value": "copper",
         "label": "Copper",
-        "description": "Copper Dragonborn\nAttributes"
+        "description": "Copper Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       },
       "gold": {
         "value": "gold",
         "label": "Gold",
-        "description": "Gold Dragonborn\nAttributes"
+        "description": "Gold Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       },
       "green": {
         "value": "green",
         "label": "Green",
-        "description": "Green Dragonborn\nAttributes"
+        "description": "Green Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       },
       "red": {
         "value": "red",
         "label": "Red",
-        "description": "Red Dragonborn\nAttributes"
+        "description": "Red Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       },
       "silver": {
         "value": "silver",
         "label": "Silver",
-        "description": "Silver Dragonborn\nAttributes"
+        "description": "Silver Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       },
       "white": {
         "value": "white",
         "label": "White",
-        "description": "White Dragonborn\nAttributes"
+        "description": "White Dragonborn\nAttributes",
+        "strBonus": 2,
+        "chaBonus": 1
       }
     }
   },
   {
     "value": "gnome",
     "label": "Gnome",
-    "description": "Gnome\nAttributes"
+    "subraces": {
+      "forestGnome": {
+        "value": "forest gnome",
+        "label": "Forest Gnome",
+        "description": "Forest Gnome Description",
+        "intBonus": 2,
+        "dexBonus": 1
+      },
+      "rockGnome": {
+        "value": "rock gnome",
+        "label": "Rock Gnome",
+        "description": "Rock Gnome Description",
+        "intBonus": 2,
+        "conBonus": 1
+      }
+    }
   },
   {
     "value": "half-elf",
     "label": "Half-Elf",
-    "description": "Half-Elf\nAttributes"
+    "description": "Half-Elf\nAttributes",
+    "chaBonus": 2
   },
   {
     "value": "half-orc",
     "label": "Half-Orc",
-    "description": "Half-Orc\nAttributes"
+    "description": "Half-Orc\nAttributes",
+    "strBonus": 2,
+    "conBonus": 1
   },
   {
     "value": "tiefling",
     "label": "Tiefling",
-    "description": "Tiefling\nAttributes"
+    "description": "Tiefling\nAttributes",
+    "chaBonus": 2
   }
 ]
