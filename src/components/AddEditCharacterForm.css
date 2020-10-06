@@ -148,3 +148,6 @@ button {
   white-space: pre-line;
   text-align: left;
 }
+
+@media screen and (max-width: 980px) {
+}

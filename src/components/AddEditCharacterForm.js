@@ -47,13 +47,6 @@ function AddEditCharacterForm({
     existingCharacter ? existingCharacter.attributes.charisma : 3
   );
 
-  const [conBonus, setConBonus] = React.useState(0);
-  const [strBonus, setStrBonus] = React.useState(0);
-  const [dexBonus, setDexBonus] = React.useState(0);
-  const [wisBonus, setWisBonus] = React.useState(0);
-  const [intBonus, setIntBonus] = React.useState(0);
-  const [chaBonus, setChaBonus] = React.useState(0);
-
   const [conBonusCheckBox, setConBonusCheckBox] = React.useState(false);
   const [strBonusCheckBox, setStrBonusCheckBox] = React.useState(false);
   const [dexBonusCheckBox, setDexBonusCheckBox] = React.useState(false);
@@ -177,84 +170,126 @@ function AddEditCharacterForm({
     const selectedRace = races.find((r) => {
       return r.value === race;
     });
+
+    let strengthValue = strength;
+    let constitutionValue = constitution;
+    let dexterityValue = dexterity;
+    let wisdomValue = wisdom;
+    let intelligenceValue = intelligence;
+    let charismaValue = charisma;
+
+    let constitutionBonusValue = 0;
+    let strengthBonusValue = 0;
+    let dexterityBonusValue = 0;
+    let wisdomBonusValue = 0;
+    let intelligenceBonusValue = 0;
+    let charismaBonusValue = 0;
+
     if (selectedRace) {
-      const selectedSubRace = selectedRace.subraces.find((sr) => {
+      const subRacesKeys = Object.keys(selectedRace.subraces);
+      const subraces = subRacesKeys.map((key) => {
+        const subRaceValue = selectedRace.subraces[key];
+        return {
+          key: key,
+          ...subRaceValue,
+        };
+      });
+      const selectedSubRace = subraces.find((sr) => {
         return sr.value === subRace;
       });
 
       if (selectedSubRace) {
-        setConBonus(
-          !isNaN(Number(selectedSubRace.conBonus))
-            ? selectedSubRace.conBonus
-            : 0
-        );
+        !isNaN(Number(selectedSubRace.conBonus))
+          ? (constitutionBonusValue = selectedSubRace.conBonus)
+          : (constitutionBonusValue = 0);
+      }
+
+      if (selectedSubRace) {
+        !isNaN(Number(selectedSubRace.strBonus))
+          ? (strengthBonusValue = selectedSubRace.strBonus)
+          : (strengthBonusValue = 0);
+      }
+
+      if (selectedSubRace) {
+        !isNaN(Number(selectedSubRace.dexBonus))
+          ? (dexterityBonusValue = selectedSubRace.dexBonus)
+          : (dexterityBonusValue = 0);
+      }
+
+      if (selectedSubRace) {
+        !isNaN(Number(selectedSubRace.wisBonus))
+          ? (wisdomBonusValue = selectedSubRace.wisBonus)
+          : (wisdomBonusValue = 0);
+      }
+
+      if (selectedSubRace) {
+        !isNaN(Number(selectedSubRace.intBonus))
+          ? (intelligenceBonusValue = selectedSubRace.intBonus)
+          : (intelligenceBonusValue = 0);
+      }
+
+      if (selectedSubRace) {
+        !isNaN(Number(selectedSubRace.chaBonus))
+          ? (charismaBonusValue = selectedSubRace.chaBonus)
+          : (charismaBonusValue = 0);
       }
 
       if (strBonusCheckBox) {
-        setStrBonus(1);
+        strengthBonusValue = 1;
       }
       if (dexBonusCheckBox) {
-        setDexBonus(1);
+        dexterityBonusValue = 1;
       }
       if (conBonusCheckBox) {
-        setConBonus(1);
+        constitutionBonusValue = 1;
       }
       if (wisBonusCheckBox) {
-        setWisBonus(1);
+        wisdomBonusValue = 1;
       }
       if (intBonusCheckBox) {
-        setIntBonus(1);
+        intelligenceBonusValue = 1;
       }
       if (chaBonusCheckBox) {
-        setChaBonus(1);
+        charismaBonusValue = 1;
       }
 
-      if (selectedSubRace) {
-        setStrBonus(
-          !isNaN(Number(selectedSubRace.strBonus))
-            ? selectedSubRace.strBonus
-            : 0
-        );
-      }
+      console.log(strengthValue);
+      console.log(constitutionValue);
+      console.log(dexterityValue);
+      console.log(wisdomValue);
+      console.log(intelligenceValue);
+      console.log(charismaValue);
+      console.log("break");
+      console.log(strengthBonusValue);
+      console.log(constitutionBonusValue);
+      console.log(dexterityBonusValue);
+      console.log(wisdomBonusValue);
+      console.log(intelligenceBonusValue);
+      console.log(charismaBonusValue);
+      console.log("break");
 
-      if (selectedSubRace) {
-        setDexBonus(
-          !isNaN(Number(selectedSubRace.dexBonus))
-            ? selectedSubRace.dexBonus
-            : 0
-        );
-      }
+      strengthValue = parseInt(strengthValue) + parseInt(strengthBonusValue);
+      constitutionValue =
+        parseInt(constitutionValue) + parseInt(constitutionBonusValue);
+      dexterityValue = parseInt(dexterityValue) + parseInt(dexterityBonusValue);
+      wisdomValue = parseInt(wisdomValue) + parseInt(wisdomBonusValue);
+      intelligenceValue =
+        parseInt(intelligenceValue) + parseInt(intelligenceBonusValue);
+      charismaValue = parseInt(charismaValue) + parseInt(charismaBonusValue);
 
-      if (selectedSubRace) {
-        setWisBonus(
-          !isNaN(Number(selectedSubRace.wisBonus))
-            ? selectedSubRace.wisBonus
-            : 0
-        );
-      }
+      console.log(strengthValue);
+      console.log(constitutionValue);
+      console.log(dexterityValue);
+      console.log(wisdomValue);
+      console.log(intelligenceValue);
+      console.log(charismaValue);
 
-      if (selectedSubRace) {
-        setIntBonus(
-          !isNaN(Number(selectedSubRace.intBonus))
-            ? selectedSubRace.intBonus
-            : 0
-        );
-      }
-
-      if (selectedSubRace) {
-        setChaBonus(
-          !isNaN(Number(selectedSubRace.chaBonus))
-            ? selectedSubRace.chaBonus
-            : 0
-        );
-      }
-
-      setStrength(strBonus + strength);
-      setConstitution(conBonus + constitution);
-      setDexterity(dexBonus + dexterity);
-      setWisdom(wisBonus + wisdom);
-      setIntelligence(intBonus + intelligence);
-      setCharisma(chaBonus + charisma);
+      setStrength(strengthValue);
+      setConstitution(constitutionValue);
+      setDexterity(dexterityValue);
+      setWisdom(wisdomValue);
+      setIntelligence(intelligenceValue);
+      setCharisma(charismaValue);
     }
 
     const character = {
@@ -266,12 +301,14 @@ function AddEditCharacterForm({
       subclass: subClazz,
       background: background,
       alignment: alignment,
-      constitution: constitution,
-      strength: strength,
-      dexterity: dexterity,
-      wisdom: wisdom,
-      intelligence: intelligence,
-      charisma: charisma,
+      attributes: {
+        constitution: constitutionValue,
+        strength: strengthValue,
+        dexterity: dexterityValue,
+        wisdom: wisdomValue,
+        intelligence: intelligenceValue,
+        charisma: charismaValue,
+      },
     };
     if (existingCharacter) {
       character._id = existingCharacter._id;
@@ -464,12 +501,14 @@ function AddEditCharacterForm({
               subclazz: subClazz,
               background: background,
               alignment: alignment,
-              constitution: constitution,
-              strength: strength,
-              dexterity: dexterity,
-              wisdom: wisdom,
-              intelligence: intelligence,
-              charisma: charisma,
+              attributes: {
+                constitution: constitution,
+                strength: strength,
+                dexterity: dexterity,
+                wisdom: wisdom,
+                intelligence: intelligence,
+                charisma: charisma,
+              },
             }}
           />
           <div className="form-column-center">
